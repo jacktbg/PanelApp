@@ -1,0 +1,12 @@
+.dashboardPage {
+  background: var(--lc-secondary);
+  display: grid;
+  grid-template-columns: 17.2rem 2.2rem 56.2rem 1.9rem 25.2rem;
+  grid-template-rows: 1fr;
+  grid-template-areas: "sidebar gap1 mainContent gap2 statusPanel";
+  height: 100vh;
+}
+
+.mainContent {
+  grid-area: mainContent;
+}

@@ -1,0 +1,28 @@
+.ad {
+  grid-area: advertisment;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 24.2rem;
+  justify-content: space-between;
+  padding: 2rem 0 2rem 0;
+}
+
+
+
+.text {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.text h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.text p {
+  font-size: 0.85rem;
+  color: #888;
+  margin-top: 0.3rem;
+}

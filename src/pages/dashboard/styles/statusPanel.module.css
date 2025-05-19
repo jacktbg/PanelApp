@@ -1,0 +1,12 @@
+.statusPanel {
+  grid-area: statusPanel;
+  display: grid;
+  padding: 0 2.5rem 0 3.3rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 7.9rem 24rem 20.7rem 24.2rem;
+  grid-template-areas: "userInfo"
+    "percentage"
+    "stats"
+    "advertisment";
+  background: var(--lc-cards);
+}

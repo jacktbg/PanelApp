@@ -1,0 +1,82 @@
+.hiddenLabels {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.loginPage {
+  background: linear-gradient(to right, var(--lc-main) 0 45%, var(--lc-secondary)45% 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--lc-main);
+  box-shadow: 0 0 1rem 0 var(--lc-cards);
+}
+
+.form {
+  height: clamp(30rem, 35vw, 90rem);
+  width: clamp(20rem, 25vw, 80rem);
+  background: var(--lc-cards);
+  display: grid;
+  grid-template-rows: 25% 15% auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'logo'
+    'description'
+    'inputs';
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px 0 var(--lc-main);
+  border-radius: 1.4rem;
+
+}
+
+.logo {
+  height: 80%;
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.description,
+.inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  height: 100%;
+  grid-area: description;
+  justify-content: start;
+  align-items: center;
+  font-size: clamp(0.8rem, 1.4vw, 4.5rem);
+}
+
+.inputs {
+  grid-area: inputs;
+  justify-content: start;
+  height: 100%;
+  align-items: center;
+  gap: clamp(0.8rem, 4%, 5rem);
+}
+
+.inputs>input {
+  font-weight: 500;
+  border-radius: 4px;
+  height: clamp(2rem, 4vw, 7rem);
+  width: clamp(2rem, 75%, 50rem);
+  box-shadow: 0 0 2px 0 var(--lc-main);
+  font-size: clamp(1.2rem, 1vw, 3rem);
+  padding-left: 1.5rem;
+}
+
+.inputs>p {
+  font-size: clamp(0.8rem, 0.8vw, 5rem);
+}

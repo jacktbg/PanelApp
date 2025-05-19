@@ -1,0 +1,67 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  gap: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+  /* light theme */
+  --lc-main: #343951;
+  --lc-secondary: #ffffff;
+  --lc-cards: #f5f6fc;
+  --lc-descriptions: #858a9d;
+  --lc-buttons: #ff9f00;
+}
+
+html,
+body {
+  z-index: 0;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  cursor: pointer;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}

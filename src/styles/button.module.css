@@ -1,0 +1,34 @@
+.button {
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.4rem;
+  height: clamp(2rem, 4vw, 7rem);
+  width: clamp(2rem, 75%, 50rem);
+  box-shadow: 0 0 2px 0 var(--lc-main);
+  font-size: clamp(1.2rem, 1vw, 3rem);
+  background: var(--lc-buttons);
+  color: var(--lc-secondary);
+  padding: 0 0.4rem 0 2rem;
+}
+
+.button:hover {
+  filter: brightness(1.1);
+}
+
+.button:active {
+  transform: scale(0.98);
+}
+
+.icon {
+  height: 2.1rem;
+  width: 2.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--lc-secondary);
+  background: var(--lc-buttons);
+  filter: brightness(1.1);
+  border-radius: 0.4rem;
+}

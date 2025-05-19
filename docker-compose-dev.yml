@@ -1,0 +1,15 @@
+services:
+  container-dev:
+    build: 
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - "5173:5173"
+    environment:
+      - NODE_ENV=development 
+    volumes:
+      - .:/home/PanelApp
+      - node_modules:/home/PanelApp/node_modules
+
+volumes:
+  node_modules:
